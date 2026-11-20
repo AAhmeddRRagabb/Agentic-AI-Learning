@@ -1,7 +1,7 @@
 # Agentic-AI
 This repository is intended to document and support my learning journey toward mastering **Agentic AI**, inshallah.
 
-The roadmap for this journey is located next to this `README`. It is divided into structured phases, where each phase focuses on specific concepts, topics, and practical tasks. The roadmap was primarily developed by [Eng. Ahmed hossam](https://github.com/Eng-Ahmed-Hossam).
+The roadmap for this journey can be accessed using this [link](https://drive.google.com/file/d/1WFqjW08etEd_TPsuy02QxBnbT7WDcfzF/view?usp=sharing). It is divided into structured phases, where each phase focuses on specific concepts, topics, and practical tasks. The roadmap was primarily developed by [Eng. Ahmed hossam](https://github.com/Eng-Ahmed-Hossam).
 
 
 
