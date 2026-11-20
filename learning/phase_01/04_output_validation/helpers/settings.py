@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # ------------------------------------
 # General CFG
 # ------------------------------------
@@ -30,7 +32,7 @@ DB_ALLOWED_QUERY_TYPES = {
 }
 
 
-ENV_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/.env"
+ENV_PATH = Path(__file__).resolve().parents[4] / ".env"
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file          = ENV_PATH,

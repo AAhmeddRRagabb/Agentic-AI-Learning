@@ -248,9 +248,6 @@ class LLMAgent:
                 "response" : None
             }
 
-            
-            
-
         if validated_model_response["validated"]:
             return {
                 "validated": True,

@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # ------------------
 # Main Driver
 # ------------------
@@ -19,7 +21,7 @@ from helpers.config import PROVIDER_GROQ
 
 from core.problem_solving_pipeline import calc_model_score_with_prompt
 
-DATA_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/learning/phase_1/phase_1_2_prompt_engineering/02_problem_solving_task/data"
+DATA_PATH = Path(__file__).resolve().parent / "data"
 
 if __name__ == "__main__":
     F.print_title("Starting the APP")

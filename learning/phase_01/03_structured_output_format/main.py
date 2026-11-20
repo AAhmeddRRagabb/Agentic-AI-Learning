@@ -1,3 +1,5 @@
+from pathlib import Path
+
 
 import re
 import os
@@ -172,7 +174,7 @@ def run_experiment(
 
 
 
-ASSETS_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/learning/phase_1/phase_1_3_output_format/assets"
+ASSETS_PATH = Path(__file__).resolve().parent / "assets"
 if __name__ == "__main__":
     # --------------------- Init ----------------------- #
     F.print_title("Starting the APP")

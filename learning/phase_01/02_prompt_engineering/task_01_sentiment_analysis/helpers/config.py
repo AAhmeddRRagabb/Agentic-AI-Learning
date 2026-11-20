@@ -3,11 +3,11 @@
 # ---------------------------------
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from pathlib import Path
 
 
 
-
-ENV_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/.env"
+ENV_PATH = Path(__file__).resolve().parents[5] / ".env"
 class Settings(BaseSettings):
     """
     Application Settings - Read .env file

@@ -1,10 +1,12 @@
+from pathlib import Path
+
 # ------------------
 # Main Driver
 # ------------------
 import os
 
 from helpers.config import get_settings
-from helpers.config import GROQ_LLAMA_8b
+from helpers.config import GROQ_GPT_120b
 from helpers.config import PROVIDER_GROQ
 
 import helpers.functional as F
@@ -78,7 +80,7 @@ def calc_model_score_with_prompt(
 
     
 
-DATA_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/learning/phase_1_2_prompt_engineering/01_sentiment_analysis_task/data"
+DATA_PATH = Path(__file__).resolve().parent / "data"
 
 
 if __name__ == "__main__":
@@ -116,14 +118,14 @@ if __name__ == "__main__":
                         calc_model_score_with_prompt(
                             provider     = PROVIDER_GROQ,
                             api_key      = groq_api_Key,
-                            model_name   = GROQ_LLAMA_8b,
+                            model_name   = GROQ_GPT_120b,
                             test_samples = sentiment_analysis_data,
                             prompt       = prompt,
                             **kwargs
                         )
                     )
     except Exception as e:
-        F.print_error(e, "Error from LLAMA_8B")
+        F.print_error(e, "Error from GPT_120b")
 
     print(100 * '-')
 
