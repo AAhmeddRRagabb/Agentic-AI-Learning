@@ -1,11 +1,14 @@
-# ============ Phase 0 ============
-# pydantic==2.13.4
-# pydantic[email]==2.13.4
-# httpx==0.28.1
-# requests==2.34.2
+# ============ Utils ============
+pydantic==2.13.4
+pydantic[email]==2.13.4
+pydantic-settings==2.15.0
 
 
-# ============ Phase 1 ============
-groq==1.4.0
-pydantic-settings==2.14.1
-# google-genai==2.8.0
+# ============ APIs ============
+httpx==0.28.1
+requests==2.34.2
+
+
+# ============ LLM Clients ============
+groq==1.6.0
+google-genai==2.19.0
